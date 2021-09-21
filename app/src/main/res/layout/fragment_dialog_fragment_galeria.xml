@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogFragmentGaleria">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#000000"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="452dp"
+                android:layout_weight="8"
+                android:scaleType="fitXY"
+                android:src="@drawable/preferences" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/galeria"
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:layout_weight="2"
+
+                android:scrollbars="horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
